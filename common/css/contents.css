@@ -1,0 +1,574 @@
+@charset "shift_jis";
+/* CSS Document */
+
+@import url("font-awesome-4.2.0/css/font-awesome.min.css");
+
+/*fukunavi-top—pcss*/
+
+/*---------------------------------------------------
+  whole
+--------------------------------------------------- */
+*{
+	margin:0;
+	padding:0;
+/*	list-style:none; 15.11.29 delate*/
+	font-style:normal;
+	text-decoration:none;
+}
+
+body{
+	width:100%;
+	font-family: "ƒƒCƒŠƒI",Verdana,Helvetica,sans-serif;
+}
+
+.clear{
+	clear:both;
+}
+a[href/*15.12.2 add*/]{
+	text-decoration:underline;
+}
+a:hover,a:active{
+	text-decoration:none;
+}
+
+a img{
+	border:0;
+}
+
+#header dl,#contents,#global_navi ul{
+	margin:0 auto;
+	width:960px;
+}
+
+#header *,#gloval_navi *,#footer *{/*--15.11.29 add--*/
+	list-style:none;	
+}
+
+
+
+/*---------------------------------------------------
+  header
+--------------------------------------------------- */
+#header{
+	margin:0;
+	width:100%;
+}
+#header #title,#header h1{
+	width:382px;
+	height:80px;
+	border-right:2px solid #fff;
+}
+#header dl{
+	width:960px;
+	height:80px;
+	border:solid #fff;
+	border-width:0 2px;
+	background:#d3e5ea;
+}
+#header dt,#header dd{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	vertical-align:middle;
+}
+
+#header dd{
+	width:530px;
+	margin-left:1em
+}
+#header ul#word li{
+	margin-left:10px;
+}
+
+#header dd ul p,#header dd ul{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	vertical-align:middle;
+}
+#header dd ul p{
+	font-size:15px;
+}
+
+#header dd ul li{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+}
+#header dl h1{
+	margin:0 !important;
+	padding:0 !important;
+}
+
+
+/*#word*/
+
+#header dl ul#word ul input[type=radio] {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#header dl ul#word ul input[type=radio] + label {
+    position: relative;     
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;     
+    cursor: pointer;
+}
+
+/*IE8ˆÈŠO‘Î‰ž*/
+@media (min-width: 1px) {
+
+#header dl ul#word ul input[type=radio]{
+	display:none;
+}
+
+#header dl ul#word ul label{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	float:left;
+	width:25px;
+	height:25px;
+	background:#fff;
+	text-align:center;
+	z-index:10;
+}
+#header dl ul#word ul input[type="radio"]:checked+label{
+	background:#333;
+	color:#fff;
+}
+
+#header dl ul#word ul li{
+	margin:0;
+	padding:0;
+	border:1px solid #333;
+}
+
+#header dl ul#word ul label[for="middle"]{
+	border:solid #333;
+	border-width:0 1px;
+}
+
+#header a[href*=readSpeaker]:before{
+	font-family:FontAwesome;
+	content:'\f028';
+}
+
+#header .searchbox,#header .searchbox form{
+	margin:0;
+	padding:0;
+}
+#header .searchbox #submit{
+	padding:2px 0
+}
+
+#header .searchbox input[type="text"] {
+	color: #ccc;
+	padding:5px 0 5px 3px;
+}
+
+#header .searchbox input.focus{
+	color:#333;
+}
+    
+}
+
+
+/*---------------------------------------------------
+  global_navi
+--------------------------------------------------- */
+
+#global_navi{
+	width:100%;
+	letter-spacing: -.40em;
+	background:#aea997;
+	height:40px;
+	margin:2px 0 10px;
+	z-index:100;
+}
+
+#global_navi a[href="#main"]{
+	display:none;
+}
+
+#global_navi ul{
+	border-left:2px solid #fff;
+}
+
+#global_navi ul li{
+    position:relative;
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	letter-spacing:normal;
+	width:190px;
+	border:solid #fff;
+	border-width:0 2px 0 0;
+	height:40px;
+	font-weight:bold;
+	vertical-align:middle;
+	text-align:center;
+	z-index: 2;
+	background:#aea997;
+}
+
+#global_navi ul li a{
+	margin-top:3px;
+	font-size:0.9em;
+	line-height:40px;
+	color:#000;
+	text-decoration:none;
+}
+
+#global_navi li>a{
+    display: block;
+    height:40px;
+	text-decoration:none;
+	color:#000;
+}
+
+#global_navi ul li>a[href*=eip],#global_navi ul li>a[href*=anata]{/*2s—p*/
+	line-height:1.2em;
+}
+
+
+/*for pull-down*/
+@media screen and (min-width: 768px) {/*PC—p*/
+#global_navi li ul{
+	display:block;
+	width:190px;
+	position:relative;
+	top:-2px;
+	left:-2px;
+	color:#fff;
+}
+
+#global_navi li ul li{
+	width: 100%;
+	font-size:0.9em;
+	padding:0;
+	margin:0;
+	border-bottom: 2px dashed #fff;
+	background:#ccc7ba;
+	text-align:left;
+}
+
+#global_navi li ul li a{
+	text-align: left;
+	text-shadow:none;
+	font-weight:normal;
+	height:40px;
+	line-height:30px;
+	padding:5px;
+	width:190px;
+}
+
+#global_navi li ul li:first-child{
+	border-top:1px solid #fff;
+}
+
+#global_navi li ul li:last-child{
+	border-bottom:1px solid #fff;
+}
+
+#global_navi li:hover, #global_navi li:active{
+	background-color:#FCD18B;
+	color:#333;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	-ms-transition: .3s;
+}
+#global_navi li:hover ul,#global_navi li:active ul{
+	display: block;
+}
+}
+
+#global_navi li ul{
+	display: none;
+}
+
+
+
+/*---------------------------------------------------
+  contents
+--------------------------------------------------- */
+#pagebody{
+	z-index:1;
+	display:block;
+	margin:0 auto;
+/*	width:960px; */
+	width:960px !important;
+}
+
+
+/*pankuzu_list*/
+
+#global_navi+#crumb,#crumb{
+	width:960px;
+	margin:0 auto 0.5em;
+	padding-left:0.5em;
+	border-bottom:1px dotted #aea997;
+	font-size:0.8em;
+	display:block;
+}
+
+ol#crumb{
+	margin:0 0 1em;
+	padding-left:0.5em;
+	border-bottom:1px dotted #aea997;
+	font-size:0.8em;
+	letter-spacing:-.40em;
+}
+
+ol#crumb:before{
+	content:'\73fe\5728\4f4d\7f6e\ff1a';/*uŒ»ÝˆÊ’uFvunicode•ÏŠ·*/
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	letter-spacing:normal;
+	margin-right:0.5em;
+}
+#crumb li{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	 letter-spacing:normal;
+}
+#crumb li:before{
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	content:'>';
+	padding:0 0.3em;
+}
+#crumb li:first-child:before{
+	display:none;
+}
+
+/*-------------------------
+  subcol
+--------------------------- */
+
+#pagebody #subcol{
+	width:200px !important;
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	vertical-align:top;
+}
+
+/*-------------------------
+  main
+--------------------------- */
+#pagebody #maincol{
+	width:740px;
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	vertical-align:top;
+	margin:0;
+	padding:0 0 0 10px;
+	z-index:2;
+}
+
+#maincol p{
+	margin:1em 0;
+}
+
+
+/*----------------
+   information
+----------------*/
+
+#subcol #info{
+	margin:0.5em 5px 1em;
+}
+#subcol #info li{
+	margin-bottom:0.5em;
+}
+
+#subcol #info li::before{
+	content:'';
+	width:15px;
+	height:15px;
+	display:inline-block;
+	 *display: inline;
+	 *zoom: 1;
+	background:url(../img/accent_007.gif) no-repeat;
+}
+
+#maincol h1.info{
+	font-family:"ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	color: #f9e7c4;
+	font-size: 1.8em;
+	font-weight: bolder;
+	text-shadow:0 1px 1px #8a721d,
+        1px 0 1px #8a721d,
+        0 -1px 1px #8a721d,
+        -1px 0 1px #8a721d,
+        -1px -1px 1px #8a721d,
+        1px -1px 1px #8a721d,
+        -1px 1px 1px #8a721d,
+        1px 1px 1px #8a721d;
+	filter:shadow(color=#8a721d,strength=8,direction=135);
+}
+
+
+/*----------------
+   eip  (16.1.7)
+----------------*/
+#eip #maincol h4{
+	margin:0.5em 0 0;
+}
+
+#eip h5{
+	margin:0.5em 0 0 1em;
+}
+
+#eip p{
+	margin:0 0 0.5em;
+}
+
+
+
+/*toppage2015(16.4.14)*/
+
+#maincol .kakomi2015{
+	margin:0;
+	padding:1em;
+	border:5px solid #a2d6ed;
+	color:#0b2811;
+}
+#maincol .kakomi2015 ol li{
+	list-style:decimal;
+	margin-left:2em;
+	margin-top:0.5em;
+}
+#maincol .kakomi2015+p{
+	margin:1.5em 0;
+	
+}
+#maincol .kakomi2015+p+div{
+	width:100%;
+	text-align:center;
+	margin-bottom:2em;
+}
+
+#maincol .kakomi2015+p+div img{
+	border:1px solid #a9a9aa;
+}
+
+
+/*------------------------------
+   jservice_menu  (15.12.17)
+------------------------------*/
+#subcol ul.jmenu{
+	list-style:none;
+}
+
+#subcol ul.jmenu a{
+	background: #a2d6ed;
+    border: 2px #62bae1;
+    box-shadow: 2px 2px #0294d4;
+    width: 183px;
+    margin: 5px 0 1em;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+	*display: inline;
+    *zoom: 1;
+}
+
+
+/*-------------------------
+  soudan
+--------------------------- */
+#global_navi~form[name="FRM_TNJ"]+form>table:first-child{
+	width:960px;
+	margin:0 auto;
+}
+
+#global_navi~form[name="FRM_TNJ"]+form>div{
+	margin-bottom:2em;
+}
+
+
+/*-------------------------
+  footer
+--------------------------- */
+
+#footer{
+	text-align:center;
+	margin-top:0.5em;
+	display:inline-block;
+	*display: inline;
+    *zoom: 1;
+	width:100%;
+
+}
+#footer ul{
+	background:#aea997;
+	padding:5px;
+	letter-spacing: -0.4em
+}
+#footer ul li{
+	display:inline;
+	letter-spacing:normal;
+}
+#footer ul li a{
+	color:#000;
+}
+#footer ul li::after{
+	content:" | ";
+}
+#footer ul li:last-child:after{
+	content:none;
+}
+
+
+/*-------------------------
+  important
+--------------------------- */
+.pagetop{
+	text-align:right;
+	margin:1em 0;
+	font-size:1.0em;
+	display:block;
+	clear:both;
+}
+.pagetop a[href="#top"]:before{
+	font-family:FontAwesome;
+	content:'\f0aa\0020';
+}
+.center{
+	text-align:center;
+}
+
+/*#pagebody .pagetop{
+	font-size:0.9em;
+}
+#pagebody .pagetop a:after{
+	display:none;
+}*/
+
+
+/*-------------------------
+  ˆÚs—p
+--------------------------- */
+
+#sideRight{
+	display:none;
+}
+
+/*IE8*/
+html>/**/body #footer ul li:after{
+	content/*\**/:" ";
+}
+html>/**/body #footer ul li:before{
+	content/*\**/:" | ";
+}
+html>/**/body #footer ul li:first-child:before{
+	content/*\**/:none;
+}

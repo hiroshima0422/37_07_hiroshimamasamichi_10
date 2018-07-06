@@ -1,0 +1,293 @@
+@charset "shift_jis";
+/* CSS Document */
+
+
+.fukunavi #pagebody {
+	float: left;
+	width: 85%;
+	margin: 0px 0px 3px;
+} 
+/* 2011.09.01 add S */
+.fukunavi #pagebody2 {
+	float: left;
+	width: 95%;
+	margin: 0px 0px 3px;
+}
+.fukunavi #pagebody3 {
+	float: left;
+	width: 90%;
+	margin: 0px 0px 3px;
+}
+/* 2011.09.01 add E */
+.fukunavi #jserviceResult {
+	width: 90%;
+	margin: 0px 0px 0px 30px;
+	padding: 2px 0px 5px;
+} 
+
+
+/* maincol */
+.fukunavi #maincol {
+	float: right;
+	width: 75%;
+	padding: 1px;
+	margin-top: 5px;
+} 
+/* 2011.09.01 add S */
+.fukunavi #maincol2 {
+	float: right;
+	width: 60%;
+	margin: 0px;
+	padding: 1px;
+}
+/* 2011.09.01 add E */
+.fukunavi #maincol .top {
+	height: 70px;
+} 
+.fukunavi #maincol .mid {
+	margin: 0px 0px 0px 7px;
+	padding: 5px 5px 5px 15px;
+	border: 1px solid #CCC;
+	line-height: 1.7;
+} 
+.fukunavi #maincol .left20 {
+	margin: 0px 0px 0px 20px;
+}
+.fukunavi #maincol .left30 {
+	margin: 0px 0px 0px 30px;
+}
+.fukunavi #maincol .left40 {
+	margin: 0px 0px 0px 40px;
+}
+
+
+
+/* subcol */
+.fukunavi #subcol {
+	float: left;
+	width: 20%;
+	line-height: 1.4;
+	padding: 1px 1px 1px 5px;
+}
+/* 2011.09.01 add S */
+.fukunavi #subcol2 {
+	float: left;
+	width: 35%;
+	line-height: 1.4;
+	padding: 1px 1px 1px 5px;
+}
+/* 2011.09.01 add E */
+.fukunavi #subcol .top {
+	height: 70px;
+} 
+.fukunavi #subcol .mid {
+	padding: 5px;
+} 
+
+
+
+/* sideRight */
+.fukunavi #sideRight {
+	float: left;
+	width: 12%;
+	margin: 0px 2px;
+	padding: 5px 4px 2px 5px;
+}
+
+
+
+/* header */
+.fukunavi #header {
+	background: #FFF;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 100%;
+} 
+.fukunavi #header h1 {
+	margin: 0px;
+	padding: 0px;
+	height: 90px;
+}
+
+#logo {
+	float: left;
+	width: 640px;
+	height: 100px;
+	background: #FFF;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#searchbox{
+	float: right;
+	width: 32%;
+	margin: 10px 0px 0px;
+	padding: 0px;
+	background: #FFF;
+	font-size: 80%;
+}
+#searchbox .search {
+	margin: 0px;
+	padding: 0px;
+}
+input.withicon {
+	padding-left: 22px;
+	border: 1px solid #000000;
+/*	background: #ffffcc url(../img/icon_search.gif) no-repeat 2px center; */
+	height: 18px;
+	line-height: 1.5;
+}
+
+#navi {
+	margin: 0px;
+	font-size: 80%;
+}
+
+#mainmenu {
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 20px;
+	padding: 3px 5px 2px 8px;
+	border-top: 1px solid #F60;
+	border-bottom: 1px solid #F60;
+	background: url(../img/back_menu_orange.gif) repeat-x;
+	font-weight: bold;
+}
+#mainmenu .menu{
+	float: left;
+}
+#mainmenu .size{
+	float: right;
+	margin: 0px 15px 0px 0px;
+	font-size: 90%;
+}
+
+#crumb {
+	clear: both;
+	height: 13px;
+	margin: 0px 0px 2px;
+	padding: 3px 2px 4px 15px;
+	border-bottom: 1px solid #FC9;
+/*	background: #FFC; */
+	font-size: 80%;
+}
+#crumb .home{
+	float: left;
+}
+#crumb .access{
+	float: right;
+}
+
+#universal {
+	margin-top: 10px;
+	border: 1px solid #36F;
+}
+
+
+/* category */
+#category {
+	clear: right;
+	margin: 0px 0px 10px;
+	padding: 0px 0px 0px 20px;
+}
+
+
+/* clearfix */
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{display: inline-block; }
+
+/* Hides from IE-mac \*/
+*html .clearfix {height: 1%; }
+.clearfix {display: block; }
+/* End hide from IE-mac */
+
+
+
+/* left content */
+#sideLeft .title {
+	margin: 1px 0px 5px;
+	padding: 2px 1px 2px 3px;
+	border-top: 1px solid #C96;
+	border-right: 2px solid #633;
+	border-bottom: 2px solid #633;
+	border-left: 1px solid #C96;
+	background: url(../img/back_left_003.gif) repeat;
+	font-weight: bold;
+}
+
+
+
+/* right content */
+#sideRight .title {
+	margin: 1px 0px 5px;
+	padding: 2px 1px 2px 3px;
+	border-top: 1px solid #C96;
+	border-right: 2px solid #633;
+	border-bottom: 2px solid #633;
+	border-left: 1px solid #C96;
+	background: url(../img/back_left_003.gif) repeat;
+	font-weight: bold;
+}
+
+
+.pagetop {
+	clear: both;
+	float: right;
+	font-size: 80%;
+	margin: 10px 0 10px 0;
+	padding: 5px;
+	background:#FFF;
+}
+.fltrt { 
+	clear: both;
+	float: right;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	margin: 0px;
+	padding: 0px;
+}
+.space5 {
+	clear:both;
+	margin-bottom: 5px;
+}
+.space10 {
+	clear:both;
+	margin-bottom: 10px;
+}
+.space15 {
+	clear:both;
+	margin-bottom: 15px;
+}
+
+
+
+/* footer */
+#footerlink {
+	clear: both;
+	width: 100%;
+	padding: 3px 0px;
+	background: #F93;
+	font-size: 85%;
+	text-align: center;
+}
+#footer {
+	margin-top: 3px;
+	padding: 5px 0px;
+	background-color: #FFFFFF;
+	font-size: 80%;
+	text-align: center;
+}

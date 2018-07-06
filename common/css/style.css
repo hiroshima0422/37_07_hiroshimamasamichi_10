@@ -1,0 +1,292 @@
+@charset "utf-8";
+/*cssのリセット*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ページの基本設定*/
+
+body {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    /*このページ全体の基準となるフォントサイズを指定している*/
+    font: 16px #333;
+}
+
+/*aタグの指定は下記の順番通りで記述する決まりです。特にhoverとactive相互関係があるので記述する順序が逆だとエラーで実行されません*/
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #ffd61a;
+}
+
+a:active {
+    color: #ffd61a;
+}
+
+h2 {
+    margin-bottom: 40px;
+    /*font指定のショートバンド
+    remというのは、ルート(body全体)のフォントサイズに対して何倍かを指定する単位。
+    るーとのfont-sizeを16pxに指定しているので16*1.5=24px*/
+    font: 1.5rem bold;
+    /*24px*/
+}
+
+.content-headding {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: none;
+}
+
+.border-headding {
+    display: inline-block;
+    padding: 0 24px 16px;
+    border-bottom: 5px solid #ffd61a;
+}
+
+h3 {
+    font-size: 1rem;
+    /*ルートと同じサイズ(16px)*/
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+    background-image: url(../img/kunitachi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/*グロナビ*/
+
+nav {
+    width: 100%;
+    height: 64px;
+    background: #00FF00;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    line-height: 4;
+    font: 1.125rem;
+    list-style: none;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/*main*/
+
+main {
+    margin: auto;
+    
+    width: 960px;
+}
+
+/*articleタグの設定。タグに大まかな設定をしておけば、classのついたarticelにも適用されるのでclassの方の記述が減る*/
+
+article {
+    margin: 80px 0;
+}
+
+/*topics
+articleでmarginの設定をしているのでここのclassではmarginの設定をする必要がない*/
+
+.top-topics {
+    width: 100%;
+    border-bottom: 1px solid #ffd61a;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+.top-topics-inner {
+    display: flex;
+    ;
+}
+
+/*topicsの定義タグ設定*/
+
+.top-topics-inner dt {
+    border-left: 5px #ffd61a solid;
+    padding-left: 40px;
+}
+
+.top-topics-inner dt,
+dd {
+    padding-right: 40px;
+}
+
+
+/*パネル設定*/
+
+.panel-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.panel-inner {
+    margin-right: 24px;
+    width: 30%;
+}
+
+.last-panel {
+    margin-right: 0;
+}
+
+.panel-icon {
+    margin-bottom: 40px;
+}
+
+.panel-text {
+    margin-bottom: 40px;
+    padding: 0 8px;
+}
+
+.btn-wrap {
+    width: 100%;
+}
+
+/*ボタンの設定（使い回せる）
+aタグをbloc要素にすることで親要素の幅一杯まで領域を広げることができる*/
+
+.btn-wrap a {
+    display: block;
+    border: solid 1px #666;
+    padding: 8px 0;
+    width: 100%;
+    background: #ffd61a;
+    text-decoration: none;
+}
+
+.btn-wrap a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-wrap-plus-margin {
+    padding-top: 1.5rem;
+}
+
+/*セミナー情報*/
+
+.seminar-wrap {
+    width: 100%;
+}
+
+
+
+.seminar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+.seminar-content {
+    margin: 0 32px 40px 0;
+    width: 48%;
+}
+
+/*右側のセミナー情報の右マージンをゼロにしている*/
+
+.last-content {
+    margin-right: 0;
+}
+
+.seminar-content h3 {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ffd61a;
+    padding-bottom: 16px;
+}
+
+.seminar-content-info {
+    margin-bottom: 24px;
+}
+
+/*定義タグ*/
+
+.seminar-content dl {
+    display: flex;
+}
+
+/*セミナーの見出しをリンクにしている
+:afterという擬似要素で、aタグの後ろ側に「→」がつくように設定している。
+content: "";の""の中に文字や画像を入れることができる*/
+
+.headding-link {
+    padding-left: 1rem;
+}
+
+.headding-link:after {
+    content: " →";
+}
+
+/*セミナー情報下部にあるボタンの追加class*/
+
+.seminar-link-btn {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.news-wrap {
+    width: 100%;
+}
+.news-inner dl {
+    display: flex;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ffd61a;
+    padding-bottom: 16px;
+}
+
+/*ここのmarignはdtにつけてもddにつけてもどちらでも好きな方に*/
+.news-inner dd {
+    margin-left: 40px;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    background: #00FF00;
+    line-height: 4;
+    text-align: center;
+}
+
+.errer {
+    margin: auto;
+    
+    text-align: center;
+}

@@ -1,0 +1,644 @@
+@charset "shift_jis";
+/* CSS Document */
+@media print {
+
+* html body  {
+	zoom: 65%;
+}
+body  {
+	font: normal 100% "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	color: #000000;
+}
+
+
+/* ëSëÃòg */
+.fukunavi #container {
+	background: #FFF;
+	margin: 0px auto;
+}  
+.fukunavi #pagebody {
+	margin: 0px auto;
+} 
+.fukunavi #sideLeft {
+	float: left;
+	width: 20%;
+	margin: 0px 2px 0px 0px;
+	padding: 2px 5px;
+	line-height: 1.4;
+	background: #FFF;
+	text-align: left;
+}
+.fukunavi #sideLeft ul .left {
+	margin: 0px;
+	list-style: disc;
+	padding: 0px;
+}
+
+.fukunavi #mainContent {
+	float: right;
+	width: 78%;
+	margin: 0px 0px 8px;
+	line-height: 1.5;
+	text-align: left;
+} 
+.fukunavi #mainContent h2 {
+	margin: 0px 0px 5px;
+	border-bottom: 2px dotted #C96;
+	background: #FFF url(../img/accent_003.gif) no-repeat left center;
+	text-align: left;
+	clear: both;
+	font-size: 140%;
+	color: #3C1D06;
+	padding: 3px 0px;
+	font-weight: bold;
+	text-indent: 31px;
+} 
+
+
+.fukunavi #sideRight {
+	float: left;
+	width: 12%;
+	margin: 0px 3px 0px 5px;
+	background: #FFF;
+	padding: 5px 5px 2px;
+	text-align: left;
+}
+
+
+
+
+/* header */
+.fukunavi #header {
+	background: #FFF;
+	margin: 0;
+	padding: 0 1px 0 0;
+	text-align: left;
+} 
+.fukunavi #header h1 {
+	margin: 0;
+}
+
+#logo {
+	height: 90px;
+}
+
+
+/* ämîFå„çÌèú */
+#seachbox {
+	margin: 7px 0px 0px;
+	padding: 0px;
+	float: right;
+	width: 29%;
+	font-size: 80%;
+	display: none;
+}
+#seachbox .search {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+/* --- */
+
+
+#searchbox {
+	margin: 7px 0px 0px;
+	padding: 0px;
+	float: right;
+	width: 29%;
+	font-size: 80%;
+	display: none;
+}
+#searchbox .search {
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+
+
+
+input.withicon {
+	padding-left: 22px;
+	background: #fff;
+	height: 18px;
+	line-height: 1.5;
+}
+
+
+#navi {
+	margin: 0px;
+	font-size: 80%;
+}
+
+#mainmenu {
+	padding: 3px 2px 3px 8px;
+	background: url(../img/back_menu_orange.gif) repeat-x;
+	border-top: 1px solid #F60;
+	border-bottom: 1px solid #F60;
+	font-weight: bold;
+	clear: both;
+	float: left;
+	width: 99%;
+	display: none;
+}
+#mainmenu .menu{
+	float: left;
+}
+#mainmenu .size{
+	float: right;
+	font-size: 90%;
+	margin: 0px 8px 0px 0px;
+}
+
+
+#crumb {
+	display: none;
+	font-size: 80%;
+	padding: 3px 2px;
+	margin: 2px auto;
+	border-bottom: 1px solid #FC9;
+	height: 13px;
+}
+#crumb .home{
+	float: left;
+}
+#crumb .access{
+	float: right;
+}
+
+
+#universal {
+	border: 1px solid #36F;
+	margin-top: 10px;
+}
+
+
+
+
+/* info */
+#info {
+	padding: 2px 3px 2px 4px;
+	margin: 0px 0px 8px;
+	clear: right;
+	text-align: left;
+}
+#info .kouhyou {
+	float: left;
+	width: 49%;
+	border: 1px solid #366;
+	margin: 0px;
+	background: #FFF;
+	text-align: left;
+}
+#info .hyouka {
+	float: left;
+	width: 49%;
+	border: 1px solid #366;
+	margin: 0px 0px 0px 8px;
+	background: #FFF;
+	text-align: left;
+}
+#info .mokuji {
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	list-style: square;
+	line-height: 1.2;
+} 
+
+
+
+/* clearfix */
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{display: inline-block; }
+
+/* Hides from IE-mac \*/
+*html .clearfix {height: 1%; }
+.clearfix {display: block; }
+/* End hide from IE-mac */
+
+
+
+/* left content */
+#sideLeft .title {
+	font-weight: bold;
+	background: url(../img/back_left_003.gif) repeat;
+	padding: 2px 1px 2px 3px;
+	border-top: 1px solid #C96;
+	border-right: 2px solid #633;
+	border-bottom: 2px solid #633;
+	border-left: 1px solid #C96;
+	margin: 1px 0px 5px;
+}
+
+
+#topics {
+	margin-bottom: 10px;
+	font-size: 90%;
+	padding: 1px 2px 1px 3px;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+#topics p {
+	padding: 0px 0px 0px 5px;
+	margin: 3px 0px 0px;
+}
+#topics .theme {
+	margin: 5px 0px 3px;
+	font-weight: bold;
+	border: 1px dotted #F63;
+}
+#topics .mokuji {
+	list-style: square outside;
+	padding: 5px 0px 0px 5px;
+	margin: 0px 0px 5px 15px;
+}
+
+
+#special {
+	margin-bottom: 10px;
+	padding: 1px 2px 1px 3px;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+#special p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+#special .theme {
+	font-weight: bold;
+	margin: 0px;
+	padding: 6px 0px 3px 8px;
+} 
+#special .mokuji {
+	list-style: square outside;
+	padding: 5px 0px 0px 5px;
+	margin: 0px 0px 5px 12px;
+} 
+
+
+#mail {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#mail p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+#mail .mokuji {
+	list-style: square outside;
+	padding: 5px 0px 0px 5px;
+	margin: 0px 0px 5px 12px;
+}
+
+
+#group {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#group p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+
+
+#care {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#care p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+
+
+#publication {
+	margin-bottom: 10px;
+	background: #FFF;
+	padding: 2px 2px 2px 3px;
+	border: 1px solid #CCC;
+}
+#publication p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+
+#login {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#login .mokuji {
+	list-style: square outside;
+	padding: 5px 0px 0px 5px;
+	margin: 0px 0px 5px 12px;
+}
+
+#kujou {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#kujou p {
+	padding: 2px 2px 2px 5px;
+	margin: 0px;
+}
+
+#link {
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 2px 2px 2px 3px;
+}
+#link .mokuji {
+	list-style: square outside;
+	padding: 5px 0px 0px 5px;
+	margin: 0px 0px 5px 12px;
+}
+
+
+
+/* center */
+#news {
+	padding: 0px 5px 8px;
+	margin: 0px 0px 15px;
+	background: #FFF;
+	border-top: 1px solid #F60;
+	border-right: 1px solid #C30;
+	border-bottom: 1px solid #C30;
+	border-left: 3px solid #C30;
+}
+#news ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+}
+#news .whatsnew {
+	margin-left: 5em;
+	text-indent: -5em
+}
+#news .txtright {
+	text-align: right;
+	margin-top: 10px;
+}
+
+
+
+#product {
+	margin-bottom: 15px;
+	padding: 0px 5px 8px;
+	/*background: #FFF url(../img/product.jpg) no-repeat right bottom;*/
+	border-top: 1px solid #F60;
+	border-right: 1px solid #C30;
+	border-bottom: 1px solid #C30;
+	border-left: 3px solid #C30;
+}
+#product p {
+	margin: 0px 0px 10px;
+	padding: 0px 0px 0px 15px;
+}
+#product .theme {
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+#product .mokuji {
+	margin: 0px 0px 10px;
+	padding: 0px 0px 0px 30px;
+	list-style: circle;
+} 
+#product .leftbox {
+	float: left;
+} 
+#product .rightbox {
+	float: left;
+} 
+
+
+
+
+#lookup {
+	padding: 0px 5px 20px;
+	background: #FFF;
+	display: block;
+	background: #FFF;
+	border-top: 1px solid #F60;
+	border-right: 1px solid #C30;
+	border-bottom: 1px solid #C30;
+	border-left: 3px solid #C30;
+}
+.clearfix:after{
+	content: ".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}	
+#lookup p {
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+} 
+#lookup .sagasu {
+	font-weight: bold;
+	color: #060;
+	border-bottom: 1px solid #396;
+	line-height: 1.8;
+	font-size: 110%;
+	background: url(../img/accent_003_01.gif) no-repeat 5px center;
+	text-indent: 22px;
+	margin: 13px 0px 5px;
+	width: 93%;
+} 
+
+#town {
+	margin-bottom: 15px;
+	padding: 0px 5px 8px;
+	background: #FFF;
+	clear: left;
+	background: #FFF;
+	border-top: 1px solid #F60;
+	border-right: 1px solid #C30;
+	border-bottom: 1px solid #C30;
+	border-left: 3px solid #C30;
+}
+#town p {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+} 
+
+
+/* ÉIÅ[ÉãÉKÉCÉh */
+.gateway {
+	width:100%;
+	display:block;
+	clear:both;
+	margin-bottom: 10px;
+}
+.gateway .koumoku {
+	margin:5px 5px 0px 3px;
+	padding:0px;
+}
+.gateway h4 {
+	margin: 6px 3px 2px 6px;
+}
+
+.gateway ul {
+	list-style: none;
+	padding: 3px;
+	margin: 0px 0px 3px 3px;
+}
+.gateway .naiyou {
+	list-style: none;
+	background: #F2F2F2;
+}
+.gateway .qanda {
+	list-style: circle inside;
+}
+.gateway .LeftArea{
+	width:32%;
+	float:left;
+}
+.gateway .CenterArea{
+	width:32%;
+	float:left;
+}
+.gateway .RightArea	{
+	width:32%;
+	float:left;
+}
+.gateway .pickup {
+	padding:0px 3px 3px 2px;
+	border:1px solid #CCCCCC;
+	margin: 0px 3px 5px 11px;
+	background: #FFF;
+}
+
+/*tokushu*/
+#t_index #pagebody #subcol #acMenu dd ul{/*s-editionÇÃçÄñ⁄îÒï\é¶*/
+	display:none;
+}
+
+/* right content */
+#sideRight .title {
+	font-weight: bold;
+	background: url(../img/back_left_003.gif) repeat;
+	padding: 2px 1px 2px 3px;
+	border-top: 1px solid #C96;
+	border-right: 2px solid #633;
+	border-bottom: 2px solid #633;
+	border-left: 1px solid #C96;
+	margin: 1px 0px 5px;
+}
+
+#ad {
+	margin: 0px 0px 8px;
+	background: #FFF;
+	padding: 2px;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+.banner {
+	width: 120px;
+	margin: 0px auto 3px;
+}
+
+#bannerAbout {
+	margin: 5px 0px 8px;
+	background: #FFF;
+	padding: 2px;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+#bannerAbout p {
+	margin: 0px;
+	padding: 0px 0px 0px 4px;
+	text-align: left;
+}
+
+#bannerEtc {
+	margin: 0px 0px 15px;
+	background: #FFF;
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+
+#ranking {
+	margin-bottom: 8px;
+	clear: right;
+	background: #FFF;
+	padding: 2px;
+	font-size: 90%;
+	border: 1px solid #CCC;
+}
+#ranking .theme {
+	margin: 10px 0px 3px;
+	font-weight: bold;
+	padding: 2px 1px;
+	border-bottom: 2px solid #33C;
+	border-top: 1px solid #33C;
+}
+#ranking ol {
+	padding: 5px 0px 0px 15px;
+	margin: 0px 0px 10px 12px;
+	line-height: 1.5;
+	font-size: 80%;
+}
+#ranking .period {
+	margin: 10px 0px 3px;
+	padding: 2px 1px;
+	font-size: 80%;
+}
+
+
+
+
+/* 
+#footerlink {
+	width: 100%;
+	font-size: 85%;
+	text-align: center;
+	clear: both;
+	padding: 3px 0px;
+	background: #F93;
+}
+#footer {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 5px 0px;
+	margin-top: 3px;
+	font-size: 80%;
+}
+ */
+
+
+
+.fltrt { 
+	float: right;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+}
+
+
+}
